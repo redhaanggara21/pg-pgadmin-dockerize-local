@@ -4,3 +4,4 @@ command
 1. coming to the bash: docker exec -it todo_db base
 2. \ls: for se the list of database
 3. docker run -itd -e POSTGRES_USER=nestAuth -e POSTGRES_PASSWORD=nestAuth -p 5432:5432 -v 
+4. if there have a forbiden using port 5054 kill first the port with sudo lsof -i :5432 and then sudo pkill -u postgres
