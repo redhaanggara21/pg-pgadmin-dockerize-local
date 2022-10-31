@@ -4,4 +4,9 @@ command
 1. coming to the bash: docker exec -it todo_db base
 2. \ls: for se the list of database
 3. docker run -itd -e POSTGRES_USER=nestAuth -e POSTGRES_PASSWORD=nestAuth -p 5432:5432 -v 
-4. if there have a forbiden using port 5054 kill first the port with sudo lsof -i :5432 and then sudo pkill -u postgres
+4. if there have a forbiden using port 5054 kill first the port with netstat -anp tcp | grep 5432 and then sudo pkill -u postgres
+5. docker-compose --env-file .env config for make the file env be a configurasi for your compose docker
+6. docker compose --env-file .env up -d to run and invoved file env
+7. admin@admin.com | secret
+8. grep 5432 sudo lsof -nP -i4TCP:5432 | grep LISTEN
+9. kill -9 <pid>
