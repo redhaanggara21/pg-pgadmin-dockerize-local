@@ -10,3 +10,4 @@ command
 7. admin@admin.com | secret
 8. grep 5432 sudo lsof -nP -i4TCP:5432 | grep LISTEN
 9. kill -9 <pid>
+10. https://www.javatpoint.com/git-log
